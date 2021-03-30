@@ -1,0 +1,2 @@
+*{margin:0;padding:0}*,:after,:before{box-sizing:border-box}.container{width:400px;word-wrap:break-word}.tj-wrapper{position:relative}.tj-box{position:fixed;right:50px;top:50px;border-radius:50%;width:400px;height:400px;box-shadow:0 0 3px rgba(0,0,0,.5);border:none}@media (max-width:500px){.container{overflow:auto}.container,.tj-wrapper{height:50vh}.tj-box{width:200px;height:200px;position:relative;top:0;right:0}}
+/*# sourceMappingURL=/style.f4f1c133.css.map */
