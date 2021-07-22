@@ -65,3 +65,12 @@ $('.addButton').on('click',() => {
 window.onbeforeunload  = ()=>{
     window.localStorage.setItem('netData', JSON.stringify(data));
 }
+$(document).on('keypress', e => {
+    const {key} = e
+    console.log(key)
+    data.forEach( el => {
+        if(el.logo.toLowerCase() === key){
+            window.open(el.url)
+        }
+    })
+})
