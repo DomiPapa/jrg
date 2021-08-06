@@ -1,0 +1,23 @@
+#app4{
+    border: 1px solid green;
+}
+#app4 #circle{
+    border: 5px solid black;
+    width: 15vw;
+    height: 15vw;
+    margin-top: 15vw;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: center;
+    line-height: 15vw;
+}
+@keyframes colorChange {
+    0% { background-color: red; }
+    50% { background-color: yellow; }
+    100% { background-color: blue; }
+}
+#app4 #circle.active{
+    color: red;
+    animation: colorChange 2s linear infinite alternate-reverse;
+}
+
