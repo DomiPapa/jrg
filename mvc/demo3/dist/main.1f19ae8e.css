@@ -1,0 +1,92 @@
+*{
+    margin:0 ;
+    padding: 0;
+}
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+ul li{
+    list-style: none;
+}
+
+/*去除滚动*/
+body{
+    overflow: hidden;
+}
+#container{
+    display: flex;
+    flex-wrap: wrap;
+}
+#container>section{
+    width: 50vw;
+    height: 50vh;
+}
+
+#app1{
+    border: 1px solid red;
+}
+
+#app2{
+    border: 1px solid blue;
+}
+#app2 .tab-bar {
+    display: flex;
+}
+#app2 .tab-bar li{
+    border: 3px solid black;
+    flex-grow: 1;
+}
+#app2 .tab-bar li.selected{
+    background-color: aqua;
+}
+
+#app2 .tab-content li{
+    display: none;
+}
+#app2 .tab-content li.active{
+  display: block;
+}
+
+
+#app3{
+    border: 1px solid yellow;
+}
+#app3 #square{
+    border: 5px solid black;
+    width: 15vw;
+    height: 15vw;
+    margin-top: 15vw;
+    transition: transform 0.5s linear;
+}
+#app3 #square.active{
+    transform: translateX(20vw);
+}
+
+
+
+#app4{
+    border: 1px solid green;
+}
+#app4 #circle{
+    border: 5px solid black;
+    width: 15vw;
+    height: 15vw;
+    margin-top: 15vw;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: center;
+    line-height: 15vw;
+}
+@keyframes colorChange {
+    0% { background-color: red; }
+    50% { background-color: yellow; }
+    100% { background-color: blue; }
+}
+#app4 #circle.active{
+    color: red;
+    animation: colorChange 2s linear infinite alternate-reverse;
+}
+
+
+
+/*# sourceMappingURL=/main.1f19ae8e.css.map */
